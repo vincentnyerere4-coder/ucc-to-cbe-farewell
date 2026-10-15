@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kwaheri UCC DSM - Boss Vin</title>
+<style>
+body{margin:0;padding:20px;font-family:Arial;background:linear-gradient(135deg,#0f766e,#f59e0b);text-align:center;color:white}
+.card{background:white;color:#111;max-width:650px;margin:auto;padding:30px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+img{width:110px;height:110px;border-radius:50%;border:4px solid teal}
+h1{color:#0f766e}
+input{width:85%;padding:12px;margin:6px;border-radius:10px;border:1px solid #ccc}
+button{background:#0f766e;color:white;padding:12px 25px;border:none;border-radius:10px;font-weight:bold;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="card">
+<img src="https://avatars.githubusercontent.com/u/1797531618?v=4" alt="Vin">
+<h1>Kwaheri UCC DSM</h1>
+<p><b>Familia yangu ya UCC DSM,</b><br><br>
+Tumesoma pamoja, tumechelewa lecture pamoja. Sasa Mungu amenipa hatua mpya - Degree IT CBE Dar.<br><br>
+Asanteni sana. UCC mtakua moyoni mwangu daima.</p>
+<hr>
+<h3>Weka Contact Yako Tusipotezane</h3>
+<input type="text" id="jina" placeholder="Jina lako">
+<input type="text" id="namba" placeholder="WhatsApp">
+<br>
+<button onclick="tuma()">Tuma</button>
+<p id="msg" style="color:green;font-weight:bold"></p>
+<p><small>Prepared by Boss Vin | 2025</small></p>
+</div>
+<script>
+function tuma(){
+  var j=document.getElementById('jina').value;
+  if(j==""){alert("Weka jina");return;}
+  document.getElementById('msg').innerHTML="Asante "+j+"! Umesajiliwa";
+}
+</script>
+</body>
+</html>
